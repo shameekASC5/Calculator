@@ -1,0 +1,39 @@
+body {
+    
+}
+
+.numberedButton {
+    width: 75px;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+
+textarea {
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+#inputBox {
+    border-radius: 5px;
+    height: 50px;
+    width: 310px;
+    margin-bottom: 5px;
+}
+
+#calculator {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#main_container {
+    width: 450px;
+}
+
+h1 {
+    border: 2px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+    margin: 0px;
+}
