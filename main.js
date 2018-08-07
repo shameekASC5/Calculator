@@ -83,10 +83,12 @@ function clearScreen () {
 function outputValue () {
     let firstNum = "";
     let secondNum = "";
+    let thirdNum = "";
+    let newNum;
     let input = inputBoxValue.value;
 //stores first number in firstNum variable as a string
     for (let i = 0; i < input.length; i++) {
-        if (input[i] === "+" || input[i] === "-" || input[i] === "/") {
+        if (input[i] === "+" || input[i] === "-" || input[i] === "/" || input[i] === "*") {
             break;
         } else {
             firstNum += input[i];
@@ -95,7 +97,7 @@ function outputValue () {
     //Number(firstNum); 
 //stores mathematical operator and second number in secondNum variable as a string
 for (let i = 0; i < input.length; i++) {
-    if (input[i] === "+" || input[i] === "-" || input[i] === "/") {
+    if (input[i] === "+" || input[i] === "-" || input[i] === "/" || input[i] === "*") {
         for (i; i < input.length; i++) {
             secondNum += input[i];
         }
@@ -103,7 +105,7 @@ for (let i = 0; i < input.length; i++) {
 }
 //Concatenates both strings together and then uses the eval function to evaluate the final answer
     let almost = firstNum + secondNum;
-    let final = eval(almost);
+    let final = math.eval(almost);
     inputBoxValue.value = final;
 }
 
